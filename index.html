@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bagels</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Unlock&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Bagels</h1>
+      <div class="rules">
+        <h2>How to Play</h2>
+        <p>I think of a 3-digit number and you try to guess what it is. After each guess, I will give you clues.</p>
+        <p>When I say:</p>
+        <ul>
+          <li><span>Bagels:</span> None of the digits is correct</li>
+          <li><span>Pico:</span> One digit is correct and in the wrong position</li>
+          <li><span>Fermi:</span> One digit is correct and in the right position</li>
+        </ul>
+      </div>
+
+      <div class="game-board">
+        <h2>Let's Play!</h2>
+        <p>I have thought up a number.</p>
+        <p>Guesses Left: <span class="guesses-left">10</span></p>
+        <p class="mystery-number">x x x</p>
+        <ul class="clues"></ul>
+        <p class="message"></p>
+        <div class="last-guess hide">
+          <p>Your last guess:</p>
+          <ul class="guessed-number">123</ul>
+        </div>
+        <form action="" class="guess-form">
+          <label for="number">Enter a 3-digit number:</label>
+          <input type="text" name="number" class="number-input" />
+          <div class="form-element button-element">
+            <button class="submit-guess">Submit</button>
+          </div>
+        </form>
+        <button class="play-again hide">Play Again!</button>
+      </div>
+
+      <div class="stats">
+        <h2>Stats</h2>
+        <p>Total rounds played: <span class="total-rounds"></span></p>
+        <p>Wins: <span class="wins"></span></p>
+        <p>Losses: <span class="losses"></span></p>
+        <P>Total time spent: <span class="time-spent"></span></P>
+      </div>
+      
+    </div>
+
+    
+    <script src="js/script.js" defer></script>
+  </body>
+
+</html>
